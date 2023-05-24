@@ -24,6 +24,17 @@ h1 {
   padding: 2rem 0;
 }
 
+.loading {
+  display: block;
+  margin: 2rem auto;
+  animation: breathing 1s infinite ease-in-out;
+}
+@keyframes breathing {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
 .neg {
   color: red;
   font-weight: 700;
