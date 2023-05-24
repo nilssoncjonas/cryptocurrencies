@@ -6,6 +6,7 @@ interface IProp {
 }
 
 const MarketData: React.FC<IProp> = ({data}) => {
+
     return (
         <div id="marketData">
             <table>
@@ -21,7 +22,7 @@ const MarketData: React.FC<IProp> = ({data}) => {
                     <tr key={item.id}>
                         <td><img src={item.image} alt={item.name} width="16px"/> { item.name}</td>
                         <td> {item.current_price.toLocaleString()} sek</td>
-                        <td>{item.price_change_percentage_24h.toLocaleString()}%</td>
+                        <td className={Math.sign(item.price_change_percentage_24h) === -1 ? "neg" : "pos"}>{item.price_change_percentage_24h.toLocaleString()}%</td>
                     </tr>
                 )}
                 </tbody>
