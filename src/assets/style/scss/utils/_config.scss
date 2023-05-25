@@ -20,8 +20,13 @@ a, a:visited, a:focus {
 }
 
 h1 {
-  text-align: center;
   padding: 2rem 0;
+  background: linear-gradient(25deg, #2600fc, #ff00ea);
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .loading {
@@ -43,4 +48,10 @@ h1 {
 .pos {
   color: #00ff00;
   font-weight: 700;
+}
+
+footer {
+  div {
+    text-align: center;
+  }
 }

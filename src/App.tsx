@@ -42,6 +42,11 @@ function App() {
             {alert && <Alert data={alert}/>}
             {marketData && <MarketData data={marketData}/>}
             {pingStatus && <Ping data={pingStatus}/>}
+            <footer>
+                <div>
+                    <a href="https://www.jonasnilsson.dev">© 2023 Jonas Nilsson</a>
+                </div>
+            </footer>
         </div>
     )
 }
